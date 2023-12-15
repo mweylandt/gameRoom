@@ -11,7 +11,7 @@
 Tic Tac Toe, Hangman, Blackjack in the R Command Line.
 }
 \author{
-\strong{Maintainer}: Weylandt Max \email{mweylandt@gmail.com}
+\strong{Maintainer}: Max Weylandt \email{mweylandt@gmail.com}
 
 }
 \keyword{internal}
