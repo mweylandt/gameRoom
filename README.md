@@ -1,3 +1,5 @@
+<img src="man/figures/logo.png" align="right" height="138" />
+
 # gameRoom
 
 This is a package that contains a few small turn-based games for the R console.
