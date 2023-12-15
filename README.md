@@ -17,7 +17,7 @@ The options are, so far:
 
 ## Installation
 
-`devtools::install_github("mweylandt/straightlining")`
+`devtools::install_github("mweylandt/gameRoom")`
 
 ## Authors
 Max Weylandt
