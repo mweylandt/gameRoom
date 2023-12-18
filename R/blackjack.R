@@ -308,7 +308,6 @@ blackjack <- function() {
 
   # set up gamestate --------------------------------------------------------
 
-  library(conText)
 
   fresh_gamestate <- function(gamestate) {
     gamestate$round <- TRUE
