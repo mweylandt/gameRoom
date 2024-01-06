@@ -12,9 +12,11 @@ A game of blackjack!
 \details{
 \describe{
 \item{- minimum bet is 5}{}
-\item{- no splits}{}
+\item{- dealer stands on 17 or higher}{}
+\item{- no soft hands for dealer - Ace counts as 11}{}
 \item{- one deck, shuffled once down to 20 cards or fewer}{}
-
-
+\item{- no insurance}{}
+\item{- no splits}{}
+\item{- no additional payouts for natural blackjack}{}
 }
 }
