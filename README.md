@@ -17,10 +17,10 @@ The options are, so far:
 
 ## Installation
 
-`devtools::install_github("mweylandt/straightlining")`
+`devtools::install_github("mweylandt/gameRoom")`
 
 ## Notes
-The Ubuntu Mono typeface gives the playing cards in blackjack a ragged edge. 
+The Ubuntu Mono typeface gives the playing cards in blackjack a ragged edge.
 
 
 ## Authors
