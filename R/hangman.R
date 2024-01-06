@@ -19,7 +19,7 @@ hangman <- function() {
   )
 
 
-
+words <- readLines(system.file("extdata", "words.txt", package = "gameRoom"))
 
 
 

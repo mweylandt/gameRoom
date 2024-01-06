@@ -67,7 +67,6 @@ card_back <- " _______
 
 
 # HANGMAN inputs ----------------------------------------------------------
-words <- readLines("data/words.txt")
 
-usethis::use_data(cardlist, blackjack_logo, card_back, words, overwrite = TRUE, internal = TRUE)
+usethis::use_data(cardlist, blackjack_logo, card_back,  overwrite = TRUE, internal = TRUE)
 
