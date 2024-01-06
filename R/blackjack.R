@@ -379,23 +379,30 @@ blackjack <- function() {
 
 
           } else if (input == "s" | input == "S") {
-            gamestate$player <- FALSE
+            gamestate$message <- "Revealing Dealer's second card..."
+            render_table(gamestate)
             Sys.sleep(stats::runif(1, min = 1, max = 2.5))
-            gamestate <- check_outcome(gamestate, p = "player")
-            render_table(gamestate)
-            gamestate$message <- "Drawing another card..."
-            gamestate <- check_outcome(gamestate, p = "dealer")
-            render_table(gamestate)
+            gamestate$player <- FALSE
+
+
           }
         } # end of player input
         counter <- 1
         # still in the same round
         while (gamestate$dealer == TRUE) {
-          Sys.sleep(stats::runif(1, min = 1, max = 2.5))
-          gamestate <- hit(gamestate, "dealer")
-          gamestate <- update_deck(gamestate)
-          gamestate <- check_outcome(gamestate, p = "dealer")
-          render_table(gamestate)
+
+          if (gamestate$dealer_score <17) {
+            gamestate$message <- "Drawing another card..."
+            render_table(gamestate)
+            Sys.sleep(stats::runif(1, min = 1, max = 2.5))
+
+            gamestate <- hit(gamestate, "dealer")
+            gamestate <- update_deck(gamestate)
+            render_table(gamestate)
+          } else {
+            gamestate <- check_outcome(gamestate, p = "dealer")
+            render_table(gamestate)
+          }
         }
       } # end of round
       input <- readline("Play again? Y/N ")
