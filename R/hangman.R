@@ -21,7 +21,6 @@ hangman <- function() {
 
 
 
-  words <- readLines("data/words.txt")
 
 
 
