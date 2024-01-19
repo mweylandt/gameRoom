@@ -7,7 +7,7 @@ This is a package that contains a few small turn-based games for the R console.
 Play a game by passing its name to the `play` function, like:
 
 ```r
-play("hangman")
+play("blackjack")
 ```
 
 The options are, so far:
